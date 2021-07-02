@@ -52,19 +52,20 @@ namespace CalculadoraSimples
             // 
             this.tela.BackColor = System.Drawing.Color.White;
             this.tela.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tela.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tela.Location = new System.Drawing.Point(44, 26);
+            this.tela.Font = new System.Drawing.Font("Bernard MT Condensed", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tela.Location = new System.Drawing.Point(40, 38);
             this.tela.Name = "tela";
-            this.tela.Size = new System.Drawing.Size(301, 50);
+            this.tela.Size = new System.Drawing.Size(295, 50);
             this.tela.TabIndex = 0;
+            this.tela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // soma
             // 
             this.soma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.soma.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.soma.Location = new System.Drawing.Point(44, 114);
+            this.soma.Location = new System.Drawing.Point(41, 114);
             this.soma.Name = "soma";
-            this.soma.Size = new System.Drawing.Size(50, 23);
+            this.soma.Size = new System.Drawing.Size(57, 43);
             this.soma.TabIndex = 1;
             this.soma.Text = "+";
             this.soma.UseVisualStyleBackColor = false;
@@ -74,9 +75,9 @@ namespace CalculadoraSimples
             // 
             this.dividi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.dividi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dividi.Location = new System.Drawing.Point(293, 114);
+            this.dividi.Location = new System.Drawing.Point(278, 114);
             this.dividi.Name = "dividi";
-            this.dividi.Size = new System.Drawing.Size(50, 23);
+            this.dividi.Size = new System.Drawing.Size(57, 43);
             this.dividi.TabIndex = 2;
             this.dividi.Text = "/";
             this.dividi.UseVisualStyleBackColor = false;
@@ -86,9 +87,9 @@ namespace CalculadoraSimples
             // 
             this.multiplica.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.multiplica.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.multiplica.Location = new System.Drawing.Point(210, 114);
+            this.multiplica.Location = new System.Drawing.Point(199, 114);
             this.multiplica.Name = "multiplica";
-            this.multiplica.Size = new System.Drawing.Size(50, 23);
+            this.multiplica.Size = new System.Drawing.Size(57, 43);
             this.multiplica.TabIndex = 3;
             this.multiplica.Text = "x";
             this.multiplica.UseVisualStyleBackColor = false;
@@ -98,9 +99,9 @@ namespace CalculadoraSimples
             // 
             this.subtrai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.subtrai.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.subtrai.Location = new System.Drawing.Point(127, 114);
+            this.subtrai.Location = new System.Drawing.Point(120, 114);
             this.subtrai.Name = "subtrai";
-            this.subtrai.Size = new System.Drawing.Size(50, 23);
+            this.subtrai.Size = new System.Drawing.Size(57, 43);
             this.subtrai.TabIndex = 4;
             this.subtrai.Text = "-";
             this.subtrai.UseVisualStyleBackColor = false;
@@ -110,9 +111,9 @@ namespace CalculadoraSimples
             // 
             this.n1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n1.Location = new System.Drawing.Point(44, 186);
+            this.n1.Location = new System.Drawing.Point(41, 186);
             this.n1.Name = "n1";
-            this.n1.Size = new System.Drawing.Size(40, 23);
+            this.n1.Size = new System.Drawing.Size(50, 43);
             this.n1.TabIndex = 5;
             this.n1.Text = "1";
             this.n1.UseVisualStyleBackColor = false;
@@ -122,9 +123,9 @@ namespace CalculadoraSimples
             // 
             this.n3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n3.Location = new System.Drawing.Point(173, 186);
+            this.n3.Location = new System.Drawing.Point(163, 186);
             this.n3.Name = "n3";
-            this.n3.Size = new System.Drawing.Size(40, 23);
+            this.n3.Size = new System.Drawing.Size(50, 43);
             this.n3.TabIndex = 6;
             this.n3.Text = "3";
             this.n3.UseVisualStyleBackColor = false;
@@ -134,9 +135,9 @@ namespace CalculadoraSimples
             // 
             this.n4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n4.Location = new System.Drawing.Point(237, 186);
+            this.n4.Location = new System.Drawing.Point(224, 186);
             this.n4.Name = "n4";
-            this.n4.Size = new System.Drawing.Size(40, 23);
+            this.n4.Size = new System.Drawing.Size(50, 43);
             this.n4.TabIndex = 7;
             this.n4.Text = "4";
             this.n4.UseVisualStyleBackColor = false;
@@ -146,9 +147,9 @@ namespace CalculadoraSimples
             // 
             this.n5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n5.Location = new System.Drawing.Point(303, 186);
+            this.n5.Location = new System.Drawing.Point(285, 186);
             this.n5.Name = "n5";
-            this.n5.Size = new System.Drawing.Size(40, 23);
+            this.n5.Size = new System.Drawing.Size(50, 43);
             this.n5.TabIndex = 8;
             this.n5.Text = "5";
             this.n5.UseVisualStyleBackColor = false;
@@ -158,9 +159,9 @@ namespace CalculadoraSimples
             // 
             this.n2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n2.Location = new System.Drawing.Point(110, 186);
+            this.n2.Location = new System.Drawing.Point(102, 186);
             this.n2.Name = "n2";
-            this.n2.Size = new System.Drawing.Size(40, 23);
+            this.n2.Size = new System.Drawing.Size(50, 43);
             this.n2.TabIndex = 9;
             this.n2.Text = "2";
             this.n2.UseVisualStyleBackColor = false;
@@ -170,9 +171,9 @@ namespace CalculadoraSimples
             // 
             this.n7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n7.Location = new System.Drawing.Point(110, 235);
+            this.n7.Location = new System.Drawing.Point(102, 244);
             this.n7.Name = "n7";
-            this.n7.Size = new System.Drawing.Size(40, 23);
+            this.n7.Size = new System.Drawing.Size(50, 43);
             this.n7.TabIndex = 14;
             this.n7.Text = "7";
             this.n7.UseVisualStyleBackColor = false;
@@ -182,9 +183,9 @@ namespace CalculadoraSimples
             // 
             this.n0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n0.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n0.Location = new System.Drawing.Point(303, 235);
+            this.n0.Location = new System.Drawing.Point(285, 244);
             this.n0.Name = "n0";
-            this.n0.Size = new System.Drawing.Size(40, 23);
+            this.n0.Size = new System.Drawing.Size(50, 43);
             this.n0.TabIndex = 13;
             this.n0.Text = "0";
             this.n0.UseVisualStyleBackColor = false;
@@ -194,9 +195,9 @@ namespace CalculadoraSimples
             // 
             this.n9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n9.Location = new System.Drawing.Point(237, 235);
+            this.n9.Location = new System.Drawing.Point(224, 244);
             this.n9.Name = "n9";
-            this.n9.Size = new System.Drawing.Size(40, 23);
+            this.n9.Size = new System.Drawing.Size(50, 43);
             this.n9.TabIndex = 12;
             this.n9.Text = "9";
             this.n9.UseVisualStyleBackColor = false;
@@ -206,9 +207,9 @@ namespace CalculadoraSimples
             // 
             this.n8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n8.Location = new System.Drawing.Point(173, 235);
+            this.n8.Location = new System.Drawing.Point(163, 244);
             this.n8.Name = "n8";
-            this.n8.Size = new System.Drawing.Size(40, 23);
+            this.n8.Size = new System.Drawing.Size(50, 43);
             this.n8.TabIndex = 11;
             this.n8.Text = "8";
             this.n8.UseVisualStyleBackColor = false;
@@ -218,9 +219,9 @@ namespace CalculadoraSimples
             // 
             this.n6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.n6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.n6.Location = new System.Drawing.Point(44, 235);
+            this.n6.Location = new System.Drawing.Point(41, 244);
             this.n6.Name = "n6";
-            this.n6.Size = new System.Drawing.Size(40, 23);
+            this.n6.Size = new System.Drawing.Size(50, 43);
             this.n6.TabIndex = 10;
             this.n6.Text = "6";
             this.n6.UseVisualStyleBackColor = false;
@@ -230,9 +231,9 @@ namespace CalculadoraSimples
             // 
             this.igual.BackColor = System.Drawing.Color.Yellow;
             this.igual.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.igual.Location = new System.Drawing.Point(286, 299);
+            this.igual.Location = new System.Drawing.Point(278, 304);
             this.igual.Name = "igual";
-            this.igual.Size = new System.Drawing.Size(57, 23);
+            this.igual.Size = new System.Drawing.Size(57, 43);
             this.igual.TabIndex = 15;
             this.igual.Text = "=";
             this.igual.UseVisualStyleBackColor = false;
@@ -242,9 +243,9 @@ namespace CalculadoraSimples
             // 
             this.limpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.limpar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.limpar.Location = new System.Drawing.Point(44, 299);
+            this.limpar.Location = new System.Drawing.Point(40, 304);
             this.limpar.Name = "limpar";
-            this.limpar.Size = new System.Drawing.Size(57, 23);
+            this.limpar.Size = new System.Drawing.Size(57, 43);
             this.limpar.TabIndex = 16;
             this.limpar.Text = "C";
             this.limpar.UseVisualStyleBackColor = false;
@@ -254,7 +255,8 @@ namespace CalculadoraSimples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 334);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(376, 359);
             this.Controls.Add(this.limpar);
             this.Controls.Add(this.igual);
             this.Controls.Add(this.n7);

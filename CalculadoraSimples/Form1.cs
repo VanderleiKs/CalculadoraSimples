@@ -16,7 +16,7 @@ namespace CalculadoraSimples
         {
             InitializeComponent();
         }
-        List<string> calcular= new();
+        string calcular;
 
         #region SetNumbers
         private void n1_Click(object sender, EventArgs e)
@@ -80,26 +80,30 @@ namespace CalculadoraSimples
 
         private void soma_Click(object sender, EventArgs e)
         {
+            tela.Text = tela.Text.Split('+', '-', 'x', '/')[0];
             tela.Text += soma.Text;
-            calcular.Add("+");
+            calcular = "+";
         }
 
         private void subtrai_Click(object sender, EventArgs e)
         {
+            tela.Text = tela.Text.Split('+', '-', 'x', '/')[0];
             tela.Text += subtrai.Text;
-            calcular.Add("-");
+            calcular = "-";
         }
 
         private void multiplica_Click(object sender, EventArgs e)
         {
+            tela.Text = tela.Text.Split('+', '-', 'x', '/')[0];
             tela.Text += multiplica.Text;
-            calcular.Add("x");
+            calcular = "x";
         }
 
         private void dividi_Click(object sender, EventArgs e)
         {
+            tela.Text = tela.Text.Split('+', '-', 'x', '/')[0];
             tela.Text += dividi.Text;
-            calcular.Add("/");
+            calcular = "/";
         }
         #endregion
 
@@ -107,25 +111,25 @@ namespace CalculadoraSimples
         {
             var result = "";
             string[] numbers = tela.Text.Split('+','-','x','/');
-            switch (calcular[0])
+            switch (calcular)
             {
                 case "+":
-                    result = (int.Parse(numbers[0]) + int.Parse(numbers[1])).ToString();
+                    result = (double.Parse(numbers[0]) + double.Parse(numbers[1])).ToString();
                     limpar_Click(limpar, EventArgs.Empty);
                     tela.Text = result;
                     break;
                 case "-":
-                    result = (int.Parse(numbers[0]) - int.Parse(numbers[1])).ToString();
+                    result = (double.Parse(numbers[0]) - double.Parse(numbers[1])).ToString();
                     limpar_Click(limpar, EventArgs.Empty);
                     tela.Text = result;
                     break;
                 case "x":
-                    result = (int.Parse(numbers[0]) * int.Parse(numbers[1])).ToString();
+                    result = (double.Parse(numbers[0]) * double.Parse(numbers[1])).ToString();
                     limpar_Click(limpar, EventArgs.Empty);
                     tela.Text = result;
                     break;
                 case "/":
-                    result = (int.Parse(numbers[0]) / int.Parse(numbers[1])).ToString();
+                    result = (double.Parse(numbers[0]) / double.Parse(numbers[1])).ToString();
                     limpar_Click(limpar, EventArgs.Empty);
                     tela.Text = result;
                     break;
@@ -137,7 +141,7 @@ namespace CalculadoraSimples
         private void limpar_Click(object sender, EventArgs e)
         {
             tela.Text = "";
-            calcular.Clear();
+            calcular = null;
         }
     }
 }
